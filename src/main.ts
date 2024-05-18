@@ -16,10 +16,16 @@ kbm.loadSprite("spritesheet", "./spritesheet.png", {
 });
 
 kbm.loadSprite("map", "./map.png");
+kbm.loadSound("background-music", "./music.mp3");
 
 kbm.setBackground(kbm.Color.fromHex("#311047"));
 
 kbm.scene("main", async () => {
+  kbm.play("background-music", {
+    loop: true,
+    volume: 0.5,
+  });
+
   const mapData = await (await fetch("./map.json")).json();
   const layers = mapData.layers;
 

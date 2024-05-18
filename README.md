@@ -3,7 +3,7 @@
 
 [Demo Link]()
 
-![Showcase Image]()
+![Showcase Image](/public/showcase.png)
 
 ## Deploy
 
